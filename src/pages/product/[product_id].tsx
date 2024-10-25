@@ -1,6 +1,8 @@
 import Layout from '../../components/Layout';
-import ProductCard from '../../components/ProductCard';
+import ProductCard1 from '@/components/ProductCard1';
 import { Product } from '@/types';
+import {useRouter} from "next/router";
+import ProductCard2 from "@/components/ProductCard2";
 
 const product: Product = {
     name: 'Minimalist Chair',
@@ -14,9 +16,13 @@ const product: Product = {
 };
 
 export default function ProductId() {
+    const router = useRouter();
+    const productId = router.query.product_id as string;
+
     return (
         <Layout>
-            <ProductCard product={product} />
+            {productId === '1' && <ProductCard1 product={product} />}
+            {productId === '2' && <ProductCard2 product={product} />}
         </Layout>
     );
 }

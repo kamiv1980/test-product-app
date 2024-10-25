@@ -5,11 +5,7 @@ import styles from '../styles/Home.module.css';
 
 const products = [
     { id: 1, name: 'Minimalist Chair', price: 150, description: 'A sleek and modern chair for any room.' },
-    { id: 2, name: 'Classic Table', price: 200, description: 'A stylish wooden table.' },
-    { id: 3, name: 'Elegant Lamp', price: 80, description: 'A beautiful, adjustable lamp.' },
-    { id: 4, name: 'Modern Sofa', price: 600, description: 'A comfortable, contemporary sofa.' },
-    { id: 5, name: 'Office Desk', price: 250, description: 'An ergonomic desk for productivity.' },
-    { id: 6, name: 'Cozy Armchair', price: 300, description: 'A soft, cozy armchair for relaxation.' },
+    { id: 2, name: 'Minimalist Chair', price: 150, description: 'A sleek and modern chair for any room.' },
 ];
 
 export default function Home() {
@@ -41,6 +37,7 @@ export default function Home() {
                     ))}
                 </div>
             </div>
-        </Layout>    </>
+        </Layout>
+    </>
   );
 }

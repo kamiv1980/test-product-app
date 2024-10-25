@@ -11,7 +11,7 @@ interface ProductCardProps {
     product: Product;
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard1({ product }: ProductCardProps) {
     const [selectedColor, setSelectedColor] = useState<string>(product.options.colors[0]);
     const [selectedSize, setSelectedSize] = useState<string>(product.options.sizes[0]);
     const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
