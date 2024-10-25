@@ -12,7 +12,7 @@ const product: Product = {
         colors: ['Black', 'White', 'Gray'],
         sizes: ['Small', 'Medium', 'Large']
     },
-    images: ['/images/image1.jpg', '/images/image2.jpg', '/images/image3.jpg', '/images/image4.jpg'],
+    images: ['/test-product-app/images/image1.jpg', '/test-product-app/images/image2.jpg', '/test-product-app/images/image3.jpg', '/test-product-app/images/image4.jpg'],
 };
 
 export default function ProductId() {
